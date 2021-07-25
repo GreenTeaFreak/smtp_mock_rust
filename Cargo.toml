@@ -11,3 +11,8 @@ clap = "2"
 rand = "0.8.4"
 lazy_static = "1.4.0"
 
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = 'abort'
